@@ -87,3 +87,60 @@ These enhancements were left out to keep the focus on demonstrating my skills an
 
 Throughout the process of refining my code, ideas, and documentation, I leveraged AI tools. 
 These tools helped me structure my thoughts more clearly and improve the overall clarity and effectiveness of the content, ensuring a well-rounded presentation of my work.
+
+## Word Sorting Application
+
+This project implements a word sorting application in Java that demonstrates the use of both Object-Oriented Programming (OOP) principles and Functional Programming techniques.
+The goal is to sort a list of words based on the sum of the alphabetical positions of their characters (A=1, Z=26).
+
+### Overview
+
+The application includes two approaches for sorting the words:
+
+1. **Functional Approach**:  
+   This approach uses Java Streams to process and sort the words based on their calculated values using functional programming techniques.
+
+2. **OOP Approach**:  
+   In this approach, each word is represented by an object that holds its value and text, and sorting is done using traditional OOP methods such as loops and comparisons.
+
+### Key Concepts and Technologies Used
+
+- **Object-Oriented Programming (OOP) Principles**:  
+  Classes and objects are used to represent words and store their values.
+
+- **Functional Programming**:  
+  The use of Java Streams to filter, map, and sort data in a functional style.
+
+- **String Manipulation**:  
+  The value of each word is calculated based on the sum of the alphabetical positions of its characters.
+
+- **Validation and Error Handling**:  
+  Input validation is provided to ensure that each word is non-empty and contains only alphabetic characters.
+
+### How to Run
+
+1. Run the `SortDemoApplication` class to test different sorting approaches.
+2. Change WordSorter implementation
+3. Test again
+
+### Test Cases
+
+The application includes several test cases to demonstrate the sorting functionality:
+
+- **Basic Sorting**:  
+  Sorts a list of mixed-case words and ensures they are ordered by the sum of their alphabetical values.
+
+- **Invalid Input Handling**:  
+  Handles cases where the input contains empty strings, numbers, or special characters.
+
+- **Edge Cases**:  
+  Tests include cases like an empty list, single-word list, and mixed-case words.
+
+### How It Works
+
+1. **Word Value Calculation**:  
+   Each word’s value is calculated by summing the positions of its letters (e.g., A=1, B=2, ..., Z=26). For example, the value of the word "ABC" is `1 + 2 + 3 = 6`.
+
+2. **Sorting Algorithms**:
+    - **Functional Sorting**: Uses Java’s built-in Stream API to sort words.
+    - **OOP Sorting**: Creates `Word` objects, each holding a word’s text and value. These objects are then sorted using `List.sort`.
